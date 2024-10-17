@@ -2,34 +2,29 @@
   <nav class="navbar">
     <div class="navbar-container">
       <div class="logo">imgur</div>
-      <div>
-        <input
+      <input
         type="text"
         class="search-input"
         placeholder="Images, #tags, @users oh my!"
       />
-
-      <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
       <div class="button-container">
-
+        <button class="new-post-button">+ New post</button>
         <button class="auth-button sign-in">Sign in</button>
         <button class="auth-button sign-up">Sign up</button>
       </div>
     </div>
   </nav>
-  <router-view />
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "NavbarComponent",
 };
 </script>
 
 <style scoped>
 .navbar {
-  background-color: #3b9dff; /* Dark background */
+  background-color: #18191a; /* Dark background */
   padding: 10px 20px; /* Padding for the navbar */
 }
 
